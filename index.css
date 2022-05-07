@@ -1,0 +1,299 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --primary-dark-blue: hsl(233, 26%, 24%);
+  --primary-lime-green: hsl(136, 65%, 51%);
+  --primary-bright-cyan: hsl(192, 70%, 51%);
+  --neutral-grayish-blue: hsl(233, 8%, 62%);
+  --neutral-light-grayish-blue: hsl(220, 16%, 96%);
+  --neutral-very-light-gray: hsl(0, 0%, 98%);
+  --neutral-white: hsl(0, 0%, 100%);
+  --body-font-size: 18px;
+}
+
+@font-face {
+  font-family: publicSans;
+  src: url(PublicSans-VariableFont_wght.ttf);
+  font-weight: 300, 400, 700;
+}
+
+h1 {
+  font-size: 56px;
+  font-family: publicSans;
+}
+h2 {
+  font-size: 40px;
+  font-family: publicSans;
+}
+h3 {
+  font-size: 28px;
+  font-family: publicSans;
+}
+h4 {
+  font-size: 22px;
+  font-family: publicSans;
+}
+p {
+  font-size: 16px;
+  font-family: publicSans;
+  color: var(--neutral-grayish-blue);
+}
+body {
+  width: 1440px;
+  margin: auto;
+}
+/*nav bar*/
+
+.nav-container {
+  width: 100%;
+  background-color: var(--neutral-white);
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  z-index: 4;
+}
+
+.nav-container > nav {
+  width: 425px;
+  display: flex;
+}
+
+.menu {
+  align-items: center;
+  display: flex;
+}
+.menu > li {
+  display: flex;
+  flex-direction: row;
+  align-content: space-evenly;
+  padding: 16px;
+  font-size: 14px;
+  font-family: publicSans;
+  color: var(--neutral-grayish-blue);
+  font-weight: 400;
+}
+
+.button-invite {
+  color: var(--neutral-white);
+  border: none;
+  border-radius: 20px;
+  background-image: linear-gradient(
+    to right,
+    var(--primary-lime-green),
+    var(--primary-bright-cyan)
+  );
+  font-size: 14px;
+  font-family: publicSans;
+  padding: 12px 26px;
+}
+
+/*banner*/
+
+.banner {
+  width: 100%;
+  background-color: var(--neutral-very-light-gray);
+  height: 630px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: clip;
+  z-index: 1;
+}
+
+.banner-left {
+  height: 340px;
+  width: 470px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+  padding: 0 8% 0;
+}
+
+.banner-left > h1 {
+  line-height: 1.2;
+}
+
+.banner-left > p {
+  line-height: 1.4;
+}
+
+.img-bg-design {
+  position: relative;
+  bottom: 50%;
+  transform: translateY(2%) translateX(20%);
+  height: 900px;
+  z-index: 2;
+}
+
+.img-mockup {
+  position: relative;
+  bottom: 50%;
+  transform: translateY(2%) translateX(22%);
+  height: 900px;
+  z-index: 3;
+}
+
+/*why banner*/
+
+.why-banner {
+  width: 100%;
+  background-color: var(--neutral-light-grayish-blue);
+  height: 720px;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 120px;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.why-banner-heading {
+  width: 660px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.why-banner-heading > h2,
+p {
+  padding: 0 0 40px 0;
+  line-height: 1.4;
+}
+
+.why-cards-container {
+  display: flex;
+}
+
+.why-card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: 280px;
+  width: 400px;
+  margin: 0 20px 0 0;
+  justify-content: space-between;
+}
