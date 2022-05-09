@@ -325,8 +325,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-.why-section-heading > h2,
-p {
+.why-section-heading p {
   line-height: 1.4;
 }
 
@@ -433,6 +432,7 @@ footer {
 
 .links-footer > * {
   font-size: 14px;
+  color: var(--neutral-white);
 }
 
 .links-footer {
@@ -459,7 +459,7 @@ footer {
   body {
     width: 375px;
   }
-
+  /*mobile nav bar*/
   .nav-container {
     display: none;
   }
@@ -483,6 +483,9 @@ footer {
   #button-invite {
     visibility: hidden;
   }
+
+  /*mobile banner*/
+
   .banner {
     flex-direction: column-reverse;
     box-sizing: border-box;
@@ -498,7 +501,7 @@ footer {
   }
   .banner-left {
     align-items: center;
-    padding: 0 10%;
+    padding: 0 7%;
     width: 100%;
     height: 300px;
     box-sizing: border-box;
@@ -507,5 +510,87 @@ footer {
 
   #mobile-title {
     font-size: 40px;
+  }
+
+  /*mobile why section*/
+
+  .why-section {
+    height: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 15% 7%;
+  }
+
+  .why-section-heading {
+    width: 100%;
+    height: 170px;
+  }
+  .why-section-heading h2 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .why-cards-container {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .why-card {
+    width: 100%;
+    height: 215px;
+    align-items: center;
+    padding-top: 10%;
+    line-height: 1.4;
+  }
+
+  /*mobile latest articles section*/
+  .latest-articles-container {
+    padding: 15% 7%;
+    height: 100%;
+  }
+  .latest-articles-container h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .article-card-container {
+    flex-direction: column;
+  }
+  .article-card {
+    margin-top: 30px;
+  }
+
+  /*mobile footer*/
+
+  footer {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    padding: 10%;
+  }
+  .footer-logo-icons-container {
+    width: 100%;
+    align-items: center;
+    padding: 0;
+  }
+  .social-media-icons {
+    width: 80%;
+    align-content: space-between;
+  }
+  .links-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+  }
+  .links-footer {
+    height: 80px;
+    align-items: center;
+    margin: 20px 0 0 0;
+  }
+  .button-footer-container {
+    align-items: center;
+    padding: 0;
+  }
+  .button-footer-container p {
+    font-size: 14px;
   }
 }
