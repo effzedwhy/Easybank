@@ -259,6 +259,11 @@ body {
   cursor: pointer;
 }
 
+.mobile-nav-bar,
+#mobile-menu-nav {
+  display: none;
+}
+
 /*banner*/
 
 .banner {
@@ -453,6 +458,10 @@ footer {
   padding-right: 120px;
 }
 
+.footer-logo {
+  width: 150px;
+}
+
 /* mobile responsive below 375*/
 
 @media screen and (max-width: 375px) {
@@ -479,6 +488,14 @@ footer {
     display: flex;
     justify-content: flex-end;
     padding: 1%;
+  }
+  .mobile-menu-nav-toggle {
+    width: 90vw;
+    height: 100%;
+    background-color: var(--neutral-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
   #button-invite {
     visibility: hidden;

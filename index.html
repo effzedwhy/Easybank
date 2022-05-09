@@ -51,6 +51,27 @@
         <div class="hamburger-menu"><img src="images/icon-hamburger.svg" alt="hamburger-mobile-menu"></div>
     </div>
 
+    <!--mobile nav menu-->
+    <nav id="mobile-menu-nav">
+        <ul id="mobile-menu">
+         <div class="mobile-menu-item">
+          <li>Home</li>
+        </div>
+        <div class="mobile-menu-item">
+            <li>About Us</li>
+          </div>
+          <div class="mobile-menu-item">
+            <li>Contact</li>
+          </div>
+          <div class="mobile-menu-item">
+            <li>Blog</li>
+          </div>
+          <div class="mobile-menu-item">
+            <li>Careers</li>
+          </div>
+        </ul>
+      </nav>
+
     <!--banner-->
     <section class="banner">
       <div class="banner-left">
@@ -203,9 +224,19 @@
     </section>
   </body>
 
+  <script>
+    let hamburgerMenu = document.querySelector(".hamburger-menu")
+    let mobileMenu = document.querySelector("#mobile-menu-nav")
+    
+    hamburgerMenu.addEventListener("click", function() {
+mobileMenu.classList.toggle("mobile-menu-nav-toggle");
+    })
+
+</script>
+
   <footer>
     <div class="footer-logo-icons-container">
-      <div><object data="images\logo-copy.svg" type="image/svg+xml" class="footer-logo" fill="#FFFFFF"></object></div>
+      <div><object data="images\logo-copy.svg" type="image/svg+xml" class="footer-logo" ></object></div>
       <div class="social-media-icons">
         <object
           data="images\icon-facebook.svg"
@@ -257,4 +288,6 @@
     </div>
 
   </footer>
-</html>
+  </html>
+
+
