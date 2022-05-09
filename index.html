@@ -85,11 +85,16 @@
       </div>
 
      
-        <!-- <img
+        <img
           src="/images/bg-intro-desktop.svg"
           alt="background-design"
           class="img-bg-design"
-        /> -->
+        />
+        <img
+          src="/images/bg-intro-mobile.svg"
+          alt="background-design"
+          class="img-bg-mobile"
+        />
         <img
           src="images/image-mockups.png"
           alt="mobile-mockups"
@@ -226,10 +231,11 @@
 
   <script>
     let hamburgerMenu = document.querySelector(".hamburger-menu")
-    let mobileMenu = document.querySelector("#mobile-menu-nav")
+    let mobileMenu = document.querySelectorAll("#mobile-menu-nav")
     
     hamburgerMenu.addEventListener("click", function() {
-mobileMenu.classList.toggle("mobile-menu-nav-toggle");
+mobileMenu.classList.toggle("mobile-menu-nav-toggle")
+mobileMenu.setAttribute("style", "display: flex");
     })
 
 </script>

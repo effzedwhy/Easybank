@@ -254,7 +254,8 @@ body {
   padding: 12px 26px;
 }
 
-.button-invite:hover {
+.button-invite:hover,
+#button-invite:hover {
   box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.5);
   cursor: pointer;
 }
@@ -295,18 +296,20 @@ body {
   line-height: 1.4;
 }
 
-/* .img-bg-design {
-  position: relative;
-  bottom: 50%;
-  transform: translateY(2%) translateX(20%);
-  height: 900px;
-  z-index: 2;
-} */
+.img-bg-design {
+  position: absolute;
+  transform: translateY(-7%) translateX(75%);
+  width: 823px;
+  height: 1000px;
+  z-index: 1;
+  object-fit: cover;
+  object-position: 0% 10%;
+}
 
 .img-mockup {
   position: relative;
   bottom: 50%;
-  transform: translateY(2%) translateX(22%);
+  transform: translateY(38%) translateX(16%);
   height: 900px;
   z-index: 3;
 }
@@ -387,10 +390,12 @@ body {
 .article-text > h5 {
   color: var(--primary-dark-blue);
   font-weight: 400;
+  line-height: 1.2;
 }
 
 .article-text > p {
   font-size: 14px;
+  line-height: 1.4;
 }
 
 .article-text {
@@ -466,9 +471,11 @@ footer {
 
 @media screen and (max-width: 375px) {
   body {
-    width: 375px;
+    width: 100%;
+    margin: none;
   }
   /*mobile nav bar*/
+
   .nav-container {
     display: none;
   }
@@ -490,13 +497,16 @@ footer {
     padding: 1%;
   }
   .mobile-menu-nav-toggle {
-    width: 90vw;
-    height: 100%;
+    width: 100%;
+    height: 225px;
     background-color: var(--neutral-white);
-    display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 4;
   }
+
   #button-invite {
     visibility: hidden;
   }
@@ -506,23 +516,39 @@ footer {
   .banner {
     flex-direction: column-reverse;
     box-sizing: border-box;
-    padding-bottom: 20%;
-    height: 650px;
+    padding-bottom: 10%;
+    height: 750px;
+    box-sizing: border-box;
+    background-color: var(--neutral-very-light-gray);
   }
   .img-mockup {
-    max-width: 90vw;
     object-fit: contain;
-    transform: translateY(16%) translateX(0%);
-    height: 100%;
+    transform: translateY(-12%) translateX(0%);
+    height: 425px;
     position: absolute;
+    z-index: 3;
+    object-fit: cover;
+    object-position: 0% 40%;
   }
+
   .banner-left {
     align-items: center;
     padding: 0 7%;
     width: 100%;
-    height: 300px;
+    height: 400px;
     box-sizing: border-box;
     text-align: center;
+    position: relative;
+    transform: translateY(-20%);
+  }
+
+  .img-bg-design {
+    display: none;
+  }
+
+  .img-bg-mobile {
+    position: relative;
+    transform: translateY(-9%) translateX(0%);
   }
 
   #mobile-title {
