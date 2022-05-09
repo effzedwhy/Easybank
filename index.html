@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width="device-width", initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
     <link rel="icon" type="image/x-icon" href="C:\Users\fz_20\OneDrive\Desktop\Fatema\Development\FrontEndMentor\Easybank\images\favicon-32x32.png">
     <title>Easybank website</title>
@@ -39,14 +39,22 @@
         </ul>
       </nav>
       <div>
-        <button type="button" class="button-invite">Request Invite</button>
+        <button type="button" id="button-invite">Request Invite</button>
       </div>
+    </div>
+
+    <!--mobile nav-->
+    <div class="mobile-nav-bar">
+        <div>
+            <object data="images\logo.svg" type="image/svg+xml"></object>
+          </div>
+        <div class="hamburger-menu"><img src="images/icon-hamburger.svg" alt="hamburger-mobile-menu"></div>
     </div>
 
     <!--banner-->
     <section class="banner">
       <div class="banner-left">
-        <h1>Next generation digital banking</h1>
+        <h1 id="mobile-title">Next generation digital banking</h1>
         <p>
           Take your financial life online. Your Easybank account will be a
           one-stop-shop for spending, saving, budgeting, investing, and much
@@ -55,18 +63,18 @@
         <button type="button" class="button-invite">Request Invite</button>
       </div>
 
-      <div>
-        <img
+     
+        <!-- <img
           src="/images/bg-intro-desktop.svg"
           alt="background-design"
           class="img-bg-design"
-        />
+        /> -->
         <img
           src="images/image-mockups.png"
           alt="mobile-mockups"
           class="img-mockup"
         />
-      </div>
+     
     </section>
 
     <!--why section-->
