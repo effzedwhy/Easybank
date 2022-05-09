@@ -551,6 +551,7 @@ footer {
   }
 
   .img-bg-mobile {
+    display: flex;
     position: relative;
     transform: translateY(-9%) translateX(0%);
   }
