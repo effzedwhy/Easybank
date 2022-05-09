@@ -314,6 +314,10 @@ body {
   z-index: 3;
 }
 
+.img-bg-mobile {
+  display: none;
+}
+
 /*why section*/
 
 .why-section {
