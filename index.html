@@ -8,36 +8,39 @@
     <link rel="icon" type="image/x-icon" href="C:\Users\fz_20\OneDrive\Desktop\Fatema\Development\FrontEndMentor\Easybank\images\favicon-32x32.png">
     <title>Easybank website</title>
   </head>
+
   <body>
     <!--nav bar-->
     <div class="nav-container">
       <div>
         <object data="images\logo.svg" type="image/svg+xml"></object>
       </div>
+
       <nav>
         <ul class="menu">
          <div class="menu-item">
-          <li>Home</li>
-          <div class="underline-gradient"></div>
+            <li>Home</li>
+            <div class="underline-gradient"></div>
         </div>
         <div class="menu-item">
             <li>About Us</li>
             <div class="underline-gradient"></div>
-          </div>
-          <div class="menu-item">
+        </div>
+        <div class="menu-item">
             <li>Contact</li>
             <div class="underline-gradient"></div>
-          </div>
-          <div class="menu-item">
+        </div>
+        <div class="menu-item">
             <li>Blog</li>
             <div class="underline-gradient"></div>
-          </div>
-          <div class="menu-item">
+        </div>
+        <div class="menu-item">
             <li>Careers</li>
             <div class="underline-gradient"></div>
           </div>
         </ul>
       </nav>
+
       <div>
         <button type="button" id="button-invite">Request Invite</button>
       </div>
@@ -52,23 +55,23 @@
     </div>
 
     <!--mobile nav menu-->
-    <nav id="mobile-menu-nav">
+      <nav id="mobile-menu-nav">
         <ul id="mobile-menu">
          <div class="mobile-menu-item">
           <li>Home</li>
         </div>
         <div class="mobile-menu-item">
             <li>About Us</li>
-          </div>
-          <div class="mobile-menu-item">
+        </div>
+        <div class="mobile-menu-item">
             <li>Contact</li>
-          </div>
-          <div class="mobile-menu-item">
+        </div>
+        <div class="mobile-menu-item">
             <li>Blog</li>
-          </div>
-          <div class="mobile-menu-item">
+        </div>
+        <div class="mobile-menu-item">
             <li>Careers</li>
-          </div>
+        </div>
         </ul>
       </nav>
 
@@ -170,7 +173,7 @@
         />
            <div class="article-text">
           <small>By Claire Robinson</small>
-          <h5>Receive money in any currency with no fees</h5>
+          <h5><a href="">Receive money in any currency with no fees</a></h5>
           <p>
             The world is getting smaller and we’re becoming more mobile. So why
             should you be forced to only receive money in a single …
@@ -185,7 +188,7 @@
         />
         <div class="article-text">
           <small>By Wilson Hutton </small>
-          <h5>Treat yourself without worrying about money</h5>
+          <h5><a href="">Treat yourself without worrying about money</a></h5>
           <p>
             Our simple budgeting feature allows you to separate out your
             spending and set realistic limits each month. That means you …
@@ -200,7 +203,7 @@
           />
           <div class="article-text">
             <small>By Wilson Hutton</small>
-            <h5>Take your Easybank card wherever you go</h5>
+            <h5><a href="">Take your Easybank card wherever you go</a></h5>
             <p>
               We want you to enjoy your travels. This is why we don’t charge any
               fees on purchases while you’re abroad. We’ll even show you …
@@ -215,7 +218,7 @@
             />
             <div class="article-text">
               <small>By Claire Robinson</small>
-              <h5>Our invite-only Beta accounts are now live!</h5>
+              <h5><a href="">Our invite-only Beta accounts are now live!</a></h5>
               <p>
                 After a lot of hard work by the whole team, we’re excited to
                 launch our closed beta. It’s easy to request an invite through
@@ -229,26 +232,31 @@
     </section>
   </body>
 
-  <script>
+  <!-- <script>
     let hamburgerMenu = document.querySelector(".hamburger-menu")
-    let mobileMenu = document.querySelectorAll("#mobile-menu-nav")
+    let mobileMenu = document.querySelector("#mobile-menu-nav")
+    let mobileMenuItem = document.querySelector(".mobile-menu-item")
+  
     
     hamburgerMenu.addEventListener("click", function() {
-mobileMenu.classList.toggle("mobile-menu-nav-toggle")
-mobileMenu.setAttribute("style", "display: flex");
-    })
+    mobileMenu.classList.toggle("mobile-menu-nav-toggle")
+    mobileMenuItem.classList.toggle(".mobile-menu-item-toggle")
+        })
 
-</script>
+</script> -->
 
   <footer>
     <div class="footer-logo-icons-container">
       <div><object data="images\logo-copy.svg" type="image/svg+xml" class="footer-logo" ></object></div>
       <div class="social-media-icons">
-        <object
+        
+          <a href=""><object
           data="images\icon-facebook.svg"
           type="image/svg+xml"
           alt="facebook-icon"
-        ></object>
+        >
+      </object></a>
+      
         <object
           data="images\icon-youtube.svg"
           type="image/svg+xml"
@@ -274,16 +282,16 @@ mobileMenu.setAttribute("style", "display: flex");
     <div class="links-container">
     <div >
       <ul class="links-footer">
-        <li>About Us</li>
-        <li>Contact</li>
-        <li>Blog</li>
+        <li><a href="">About Us</li></a>
+        <li><a href="">Contact</li></a>
+        <li><a href="">Blog</li></a>
       </ul>
     </div>
     <div >
       <ul class="links-footer">
-        <li>Careers</li>
-        <li>Support</li>
-        <li>Privacy Policy</li>
+        <li><a href="">Careers</a></li>
+        <li><a href="">Support</a></li>
+        <li><a href="">Privacy Policy</a></li>
       </ul>
     </div>
 </div>
