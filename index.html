@@ -56,23 +56,23 @@
 
     <!--mobile nav menu-->
       <nav id="mobile-menu-nav">
-        <ul id="mobile-menu">
+        <div id="mobile-menu">
          <div class="mobile-menu-item">
-          <li>Home</li>
+          <a href="">Home</a>
         </div>
         <div class="mobile-menu-item">
-            <li>About Us</li>
+            <a href="">About Us</a>
         </div>
         <div class="mobile-menu-item">
-            <li>Contact</li>
+            <a href="">Contact</a>
         </div>
         <div class="mobile-menu-item">
-            <li>Blog</li>
+            <a href="">Blog</a>
         </div>
         <div class="mobile-menu-item">
-            <li>Careers</li>
+            <a href="">Careers</a>
         </div>
-        </ul>
+        </div>
       </nav>
 
     <!--banner-->
@@ -232,18 +232,22 @@
     </section>
   </body>
 
-  <!-- <script>
-    let hamburgerMenu = document.querySelector(".hamburger-menu")
-    let mobileMenu = document.querySelector("#mobile-menu-nav")
-    let mobileMenuItem = document.querySelector(".mobile-menu-item")
-  
+  <script>
+    const hamburgerMenu = document.querySelector(".hamburger-menu")
+    const mobileMenu = document.querySelector("#mobile-menu")
+    const bannerDim = document.querySelector(".banner")
     
     hamburgerMenu.addEventListener("click", function() {
-    mobileMenu.classList.toggle("mobile-menu-nav-toggle")
-    mobileMenuItem.classList.toggle(".mobile-menu-item-toggle")
+      if (mobileMenu.style.display === "none") {
+        mobileMenu.style.display = "flex";
+        bannerDim.style.background = "linear-gradient(180deg, rgba(77,76,87,1) 0%, rgba(78,78,92,0.6446953781512605) 47%, rgba(98,113,130,0.17690826330532217) 100%)";
+  } else {
+    mobileMenu.style.display = "none";
+    bannerDim.style.background = "var(--neutral-very-light-gray)"
+     }
         })
 
-</script> -->
+</script>
 
   <footer>
     <div class="footer-logo-icons-container">
