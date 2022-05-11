@@ -344,7 +344,7 @@ body {
 .why-section {
   width: 100%;
   background-color: var(--neutral-light-grayish-blue);
-  height: 720px;
+  height: 640px;
   display: flex;
   flex-direction: column;
   padding: 100px 120px;
@@ -353,7 +353,7 @@ body {
 }
 .why-section-heading {
   width: 660px;
-  height: 160px;
+  height: 125px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -370,10 +370,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: start;
-  height: 280px;
+  height: 240px;
   width: 400px;
   margin: 0 20px 0 0;
   justify-content: space-between;
+  line-height: 1.4;
 }
 
 /*latest articles section*/
