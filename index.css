@@ -143,23 +143,24 @@ table {
 h1 {
   font-size: 56px;
   font-family: publicSans;
+  color: var(--primary-dark-blue);
 }
 h2 {
   font-size: 40px;
   font-family: publicSans;
+  color: var(--primary-dark-blue);
 }
 h3 {
-  font-size: 28px;
-  font-family: publicSans;
-}
-h4 {
   font-size: 22px;
   font-family: publicSans;
+  color: var(--primary-dark-blue);
 }
-h5 {
+h4 {
   font-size: 18px;
   font-family: publicSans;
+  color: var(--primary-dark-blue);
 }
+
 p {
   font-size: 16px;
   font-family: publicSans;
@@ -227,7 +228,7 @@ body {
 
 /* ------------------ */
 
-.menu-item > li {
+.menu-item > a {
   font-size: 14px;
   font-family: publicSans;
   color: var(--neutral-grayish-blue);
@@ -256,11 +257,11 @@ body {
   display: none;
 }
 
-.menu-item > li:hover + .underline-gradient {
+.menu-item > a:hover + .underline-gradient {
   display: block;
 }
 
-.menu-item > li:hover {
+.menu-item > a:hover {
   cursor: pointer;
   font-weight: 700;
 }
