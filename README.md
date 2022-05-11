@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/effzedwhy/Easybank] (https://www.github.com/effzedwhy/Easybank)
-- Live Site URL: [https://effzedwhy.github.io/Easybank/] (https://effzedwhy.github.io/Easybank/)
+- Solution URL: (https://www.github.com/effzedwhy/Easybank)
+- Live Site URL: (https://effzedwhy.github.io/Easybank/)
 
 ## My process
 
