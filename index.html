@@ -51,7 +51,7 @@
         <div>
             <object data="images\logo.svg" type="image/svg+xml"></object>
           </div>
-        <div class="hamburger-menu"><img src="images/icon-hamburger.svg" alt="hamburger-mobile-menu"></div>
+        <div class="hamburger-menu"><img id="mobile-icon" src="images/icon-hamburger.svg" alt="hamburger-mobile-menu"></div>
     </div>
 
     <!--mobile nav menu-->
@@ -234,6 +234,7 @@
 
   <script>
     const hamburgerMenu = document.querySelector(".hamburger-menu")
+    const mobileIcon = document.querySelector("#mobile-icon")    
     const mobileMenu = document.querySelector("#mobile-menu")
     const bannerDim = document.querySelector(".banner")
     
@@ -241,9 +242,11 @@
       if (mobileMenu.style.display === "none") {
         mobileMenu.style.display = "flex";
         bannerDim.style.background = "linear-gradient(180deg, rgba(77,76,87,1) 0%, rgba(78,78,92,0.6446953781512605) 47%, rgba(98,113,130,0.17690826330532217) 100%)";
-  } else {
+        mobileIcon.src = "images/icon-close.svg"
+     } else {
     mobileMenu.style.display = "none";
-    bannerDim.style.background = "var(--neutral-very-light-gray)"
+    bannerDim.style.background = "var(--neutral-very-light-gray)";
+    mobileIcon.src = "images/icon-hamburger.svg"
      }
         })
 
